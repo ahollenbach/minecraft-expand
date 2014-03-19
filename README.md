@@ -77,7 +77,7 @@ The second key setting is toggling which structures are able to generate. The us
 Before the world starts generating, the mod will need to compact any inefficiencies that may have slipped through in schematic conversion (i.e. double counting anchor block IDs, etc.). At this step, syntactical sugar, such as predefined block groupings and biome groupings are reduced to a simple list of ids. This will not affect the schematic file and will occur only during runtime, as to maintain the user-friendly aspect. This way the program has a standard base to run from. Each included schematic is then added to a list of active schematics to check.
 
 Every time a new chunk is loaded, several things must be done. This code needs to run immediately after the chunk has been loaded by Minecraft, as it requires the chunk block data to place the schematics. This is pseudocode for the process:
-```no-highlight
+```
 if structure density is already fulfilled:
     move to next chunk
 endIf
@@ -155,6 +155,8 @@ I believe bundles will just be zipped folders of the structures they contain, al
 ###Quality Control
 The structure library is useless without quality control. Schematic and bundle popularity will be driven by ratings and download counts. Addtionally, both will be able to be flagged as NSFW, incomplete, or not meeting quality standards. These flags will show up when viewing the schematic/bundle.
 
+Additionally, bug reporting will be handled through a project managment system such as [Redmine](http://www.redmine.org/). Although GitHub supports an submission system, not all users are expected to have a GitHub account to submit issues with the site and/or mod.
+
 ##6. Development and Timeline
 In terms of development, I am by no means a pro Minecraft modder, but I have some experience. I made a fully functional cut/copy/paste/import/export/fill/replace mod, only to later figure out that Bukkit's WorldEdit existed. Either way, that gave me experience with a large portion of the modding process.
 
@@ -167,6 +169,7 @@ I won't be able to commit a ton of time to this project, but I still want to get
 * WebGL/JavaScript (for schematic file rendering)
 * MySQL
 * Git / GitHub
+* Redmine
 
 ###Potential Resources
 * [LibSchematic](https://github.com/tehbeard/LibSchematic) for importing schematic files
