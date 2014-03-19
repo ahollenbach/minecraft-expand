@@ -168,6 +168,10 @@ I won't be able to commit a ton of time to this project, but I still want to get
 * MySQL
 * Git / GitHub
 
+###Potential Resources
+* [LibSchematic](https://github.com/tehbeard/LibSchematic) for importing schematic files
+* [SchematicLoader.java](https://github.com/Tzeentchful/SkyBlock-Co-Op/blob/master/src/main/java/nz/tzeentchful/sky/utils/SchematicLoader.java) - example import code
+
 ###Timeline
 This is the order in terms of critical systems and priority.
 #####Key Features
